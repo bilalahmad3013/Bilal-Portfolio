@@ -1,5 +1,5 @@
 import "./hero.scss";
-import BilalResume from "../../../public/BilalResume.pdf"
+
 import { motion } from "framer-motion";
 
 const textVariants = {

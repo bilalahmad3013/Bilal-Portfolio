@@ -25,7 +25,8 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const  [btnText, setBtnText] = useState("Submit")
+  const [btnText, setBtnText] = useState("Submit")
+  const [secondHover , setSecondHover] = useState(false);
 
   const isInView = useInView(ref, { margin: "-100px" });
 
@@ -66,6 +67,7 @@ const Contact = () => {
 
   const handleMouseEnter = () => {
     if (name === '' || email === '' || message === '') {
+      setSecondHover(true);
 
        setBtnText("First Fill All The Fields !!")
       // Calculate random positions within the visible area of the screen
@@ -83,8 +85,8 @@ const Contact = () => {
   }
 
   useEffect(()=>{
-    if(name !="" && email !="" && message!=""){     
-      setBtnText("Submit")
+    if(name !="" && email !="" && message!="" && secondHover){     
+      setBtnText("Hmmm good now submit")
     }
   },[name, message, email])
 

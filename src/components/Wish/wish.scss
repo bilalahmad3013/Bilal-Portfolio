@@ -1,35 +1,55 @@
-#wish{
-   display: flex;
-   justify-content: center;  
-   margin-top: 22%;   
-    font-size: 50px; 
-    font-family: sans-serif;
+#wish {
+  display: flex;
+  justify-content: center;
+  margin-top: 22%;
+  font-size: 50px;
+  font-family: sans-serif;
 }
-.dot {
-    position: relative;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white; 
-    margin-right: 12px;
-    top: 35px;
-  }
 
-.urduDot{
-    position: relative;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white; 
-    margin-right: 12px;
-    top: 50px; 
-}  
+.dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 12px;
+  top: 35px;
+}
+
+.urduDot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 12px;
+  top: 50px;
+}
 
 #wish {
-    transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #wish {   
+    margin-top:400px;
+    font-size: 50px;
+   
   }
-  
-  .fade-out {
-    opacity: 0;
+}
+
+@media screen and (max-width: 390px) {
+  #wish {   
+    margin-top:300px;
+    font-size: 50px;
+   
   }
-  
+}
+
+
+
+

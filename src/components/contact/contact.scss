@@ -56,6 +56,14 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+      width:450px;
+      height:450px;
+
+      @include mobile {
+       margin-right: -250px;
+       height: 300px;
+       width: 300px;
+      }
     }
 
     form {
@@ -63,6 +71,9 @@
       margin-top: 100px;
       flex-direction: column;
       gap: 20px;
+      @include mobile {
+        margin-top: -50px;
+      }
 
       input,
       textarea {
